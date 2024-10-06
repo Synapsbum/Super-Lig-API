@@ -55,7 +55,7 @@ app.get('/superlig-son-maclar', async (req, res) => {
 // CollectAPI'den Süper Lig puan durumu verilerini çekme
 async function getSuperligHaber() {
     try {
-        const response = await axios.get('https://api.collectapi.com/news/getNews?country=tr&tag=spor', {
+        const response = await axios.get('https://api.collectapi.com/news/getNews?country=tr&tag=sport', {
             headers: {
                 'authorization': `apikey ${API_KEY}`,
                 'content-type': 'application/json'
